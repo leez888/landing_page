@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav id="mainNav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-compass"></i>
+                NavMenu
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <button class="cta-button">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Interactive Navigation Menu</h1>
+            <p>A responsive navigation bar with scroll and hover effects that works across all pages</p>
+            <button class="cta-button">Explore Features</button>
+        </div>
+    </section>
+    
+    <!-- Content Sections -->
+    <section class="section">
+        <h2>Scroll Effect Demonstration</h2>
+        <p>Scroll down to see the navigation menu change style. When you scroll past 100px, the navigation bar will become more compact and change its background color.</p>
+        <p>The menu remains fixed at the top of the screen, providing constant access no matter where you are on the page.</p>
+    </section>
+    
+    <section class="section dark">
+        <h2>Hover Effects</h2>
+        <p>Hover over the menu items to see the interactive effects. Each menu item will:</p>
+        <ul>
+            <li>Change color to a vibrant accent</li>
+            <li>Grow slightly in size</li>
+            <li>Show an animated underline</li>
+            <li>Display a subtle background glow</li>
+        </ul>
+    </section>
+    
+    <section class="section">
+        <h2>Responsive Design</h2>
+        <p>This navigation menu is fully responsive and will adapt to different screen sizes. Try resizing your browser to see how the menu transforms:</p>
+        <ul>
+            <li>Desktop: Full horizontal menu with all items visible</li>
+            <li>Tablet: Compact layout with adjusted spacing</li>
+            <li>Mobile: Hamburger menu for smaller screens</li>
+        </ul>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Color Transition</h3>
+                <p>Menu changes color smoothly on scroll</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mouse-pointer"></i>
+                <h3>Interactive Hover</h3>
+                <p>Menu items respond to cursor movement</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Fully Responsive</h3>
+                <p>Works on all device sizes</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+        <p>Scroll down to see the effect</p>
+    </div>
+    
+    <!-- Dummy content for scrolling -->
+    <div class="dummy-content"></div>
+    
+    <footer>
+        <p>Interactive Navigation Menu &copy; 2023</p>
+    </footer>
+    
+    <script>
+        // Add scroll event listener
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
